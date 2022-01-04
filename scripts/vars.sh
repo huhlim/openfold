@@ -1,3 +1,3 @@
 #!/bin/bash
 
-ENV_NAME=openfold_venv
+ENV_NAME=openfold
