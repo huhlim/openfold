@@ -9,6 +9,7 @@ import os
 
 import random
 import time
+import shutil
 
 import numpy as np
 import pytorch_lightning as pl
@@ -252,7 +253,7 @@ if __name__ == "__main__":
         help="Directory containing precomputed validation alignments"
     )
     parser.add_argument(
-        "--kalign_binary_path", type=str, default='/usr/bin/kalign',
+        "--kalign_binary_path", type=str, default=shutil.which("kalign"),
         help="Path to the kalign binary"
     )
     parser.add_argument(
